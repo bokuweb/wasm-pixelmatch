@@ -1,0 +1,6 @@
+assemblyscript/build
+assemblyscript/node_modules
+cpp/pixelmatch.js
+pixelmatch.wasm
+rust/pkg
+rust/target
