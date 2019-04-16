@@ -2,5 +2,6 @@ assemblyscript/build
 assemblyscript/node_modules
 cpp/pixelmatch.js
 pixelmatch.wasm
+*.wat
 rust/pkg
 rust/target

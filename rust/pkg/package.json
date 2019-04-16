@@ -1,0 +1,15 @@
+{
+  "name": "pixelmatch",
+  "collaborators": [
+    "bokuweb <bokuweb12@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "pixelmatch_bg.wasm",
+    "pixelmatch.js",
+    "pixelmatch.d.ts"
+  ],
+  "module": "pixelmatch.js",
+  "types": "pixelmatch.d.ts",
+  "sideEffects": "false"
+}
