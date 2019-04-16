@@ -30,6 +30,7 @@ async function fetchExposedFunction(wasmFile) {
 }
 
 (async () => {
+  const cpp_opt = await fetchExposedFunction("./cpp/cpp_opt.wasm");
   const cpp = await fetchExposedFunction("./cpp/pixelmatch.wasm");
   const rust = await fetchExposedFunction(
     "./rust/pkg/pixelmatch_optimized.wasm"
@@ -50,6 +51,9 @@ async function fetchExposedFunction(wasmFile) {
     .add("cpp", {
       fn: () => cpp(0, offset1, 800, 578, offset2)
     })
+    .add("cpp_opt", {
+      fn: () => cpp_opt(0, offset1, 800, 578, offset2)
+    })    
     .add("rust", {
       fn: () => rust(0, offset1, 800, 578, offset2)
     })
