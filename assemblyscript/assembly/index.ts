@@ -36,10 +36,10 @@ function colorDelta(img1: u32, img2: u32, k: u32, m: u32, yOnly: bool): f32 {
   let b1 = get(k + 2, 0) as f32;
   let a1 = get(k + 3, 0) as f32;
 
-  let r2 = get(m + 0, img1) as f32;
-  let g2 = get(m + 1, img1) as f32;
-  let b2 = get(m + 2, img1) as f32;
-  let a2 = get(m + 3, img1) as f32;
+  let r2 = get(m + 0, img2) as f32;
+  let g2 = get(m + 1, img2) as f32;
+  let b2 = get(m + 2, img2) as f32;
+  let a2 = get(m + 3, img2) as f32;
 
   if (a1 === a2 && r1 === r2 && g1 === g2 && b1 === b2) return 0.0;
 
